@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Hp/IdeaProjects/Restful_Booker_Automation_Project/testng001.xml">
+    <classes>
+        <class name="AllureReport_Programs.AllureReportProgram">
+            <methods>
+                <exclude name="indiaPincode"/>
+                <exclude name="usPincode"/>
+                <exclude name="negativePincode"/>
+                <include name="specialCharacterPincode"/>
+                <include name="nullPincode"/>
+            </methods>
+        </class>
+
+        <class name="GET_Request.TC_001_GET_BDDStyle">
+            <methods>
+                <exclude name="test_BDD_GET"/>
+            </methods>
+        </class>
+
+    </classes>
+    </test>
+</suite>

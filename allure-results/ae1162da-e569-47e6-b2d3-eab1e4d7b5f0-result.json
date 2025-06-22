@@ -1,0 +1,62 @@
+{
+  "uuid": "ae1162da-e569-47e6-b2d3-eab1e4d7b5f0",
+  "historyId": "ef8170a996bf3a86b8ce38dccf8b7ff5",
+  "fullName": "AllureReport_Programs.AllureReportProgram.indiaPincode",
+  "labels": [
+    {
+      "name": "package",
+      "value": "AllureReport_Programs.AllureReportProgram"
+    },
+    {
+      "name": "testClass",
+      "value": "AllureReport_Programs.AllureReportProgram"
+    },
+    {
+      "name": "testMethod",
+      "value": "indiaPincode"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "C:/Users/Hp/IdeaProjects/Restful_Booker_Automation_Project"
+    },
+    {
+      "name": "subSuite",
+      "value": "AllureReport_Programs.AllureReportProgram"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-RORK2UUF"
+    },
+    {
+      "name": "thread",
+      "value": "636@LAPTOP-RORK2UUF.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "indiaPincode",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "TC#1 - Verify that the Indian Valid Pincode gives 200 Ok",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1750479054059,
+  "stop": 1750479057875
+}

@@ -1,0 +1,15 @@
+{
+  "uuid": "6cf13964-0c58-4559-a516-a44723d853ad",
+  "name": "AllureReport_Programs.AllureReportProgram",
+  "children": [
+    "ae1162da-e569-47e6-b2d3-eab1e4d7b5f0",
+    "ec45a6fc-ff09-447e-a198-dcd820ec812b",
+    "54b8d284-e4f3-49f3-8b42-c0d20ee9953b",
+    "855e82d1-8f03-49dd-a01c-11bb84f7e77f",
+    "41bd6c0f-2bd3-46fa-b2e0-45c494a64627"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1750479053883,
+  "stop": 1750479062819
+}
