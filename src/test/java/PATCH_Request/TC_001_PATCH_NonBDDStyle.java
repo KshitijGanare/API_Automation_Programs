@@ -24,13 +24,6 @@ public class TC_001_PATCH_NonBDDStyle {
         String payload = "{\n" +
                 "    \"firstname\": \"Partial\",\n" +
                 "    \"lastname\": \"Update\",\n" +
-                "    \"totalprice\": 123456,\n" +
-                "    \"depositpaid\": true,\n" +
-                "    \"bookingdates\": {\n" +
-                "        \"checkin\": \"2025-06-22\",\n" +
-                "        \"checkout\": \"2025-06-22\"\n" +
-                "    },\n" +
-                "    \"additionalneeds\": \"Breakfast\"\n" +
                 "}";
 
         r = RestAssured.given();
