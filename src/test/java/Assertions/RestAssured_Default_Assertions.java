@@ -8,7 +8,7 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 import org.hamcrest.Matchers;
 
-public class RestAssured_Assertions {
+public class RestAssured_Default_Assertions {
 
     RequestSpecification requestSpecification;
     ValidatableResponse validatableResponse;
@@ -59,10 +59,16 @@ public class RestAssured_Assertions {
         validatableResponse.body("bookingid",Matchers.notNullValue());
 
 
-        // validatableResponse.body("Json path we get from jsonpathfinder.com", Use Matchers class inbuilt function))
+        //
 
     }
 
-
-
 }
+
+/*
+Logic: We have to first extract data from response then validate it
+
+- validatableResponse.body("Find Json path https://jsonpathfinder.com/", Use Matchers class inbuilt function));
+-
+
+ */
