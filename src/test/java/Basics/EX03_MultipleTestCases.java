@@ -38,5 +38,7 @@ public class EX03_MultipleTestCases {
                 .then()
                 .log().all().statusCode(200);
 
+        // Jab class run karenge toh saare hi chalenge
+
     }
 }

@@ -20,4 +20,7 @@ public class Ex01_BasicApiProgram {
                 .then()
                 .log().all().statusCode(300);
     }
+
+
+
 }
