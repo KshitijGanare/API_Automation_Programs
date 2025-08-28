@@ -26,6 +26,7 @@ public class TC_001_PATCH_NonBDDStyle {
                 "    \"lastname\": \"Update\",\n" +
                 "}";
 
+
         r = RestAssured.given();
         r.baseUri("https://restful-booker.herokuapp.com");
         r.basePath("/booking/" + id);
@@ -39,4 +40,5 @@ public class TC_001_PATCH_NonBDDStyle {
         vr = response.then().log().all().statusCode(200);
 
     }
+
 }

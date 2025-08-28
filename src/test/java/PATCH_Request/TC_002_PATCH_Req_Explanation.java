@@ -22,10 +22,9 @@ public class TC_002_PATCH_Req_Explanation {
         int booking_id = 479;
         String body = "{\n" +
                 "    \"firstname\": \"Narendra\",\n" +
-                "    \"lastname\": \"Gandhi\"\n" +
+                "    \"lastname\": \"Gandhi\"\n" +      // body ke last value me comma nahi lagta
                 "}";
         String token = "f29140a574aaf5e";
-
 
         rspec = RestAssured.given();
         rspec.baseUri("https://restful-booker.herokuapp.com");
@@ -34,7 +33,7 @@ public class TC_002_PATCH_Req_Explanation {
         rspec.cookie("token",token);
         rspec.contentType(ContentType.JSON);
 
-        res = rspec.when().patch();
+        res = rspec.when().patch();     // When ke baad log nahi lagta
 
         vres = res.then().log().all().statusCode(200);
 
