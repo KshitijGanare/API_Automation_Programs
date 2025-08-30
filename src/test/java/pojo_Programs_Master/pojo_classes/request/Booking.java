@@ -1,4 +1,4 @@
-package pojo_Programs.pojo_classes.request;
+package pojo_Programs_Master.pojo_classes.request;
 
 public class Booking {
     private String firstname;
@@ -7,7 +7,6 @@ public class Booking {
     private boolean depositpaid;
     private String additionalneeds;
     private BookingDates bookingdates;
-
 
     public String getFirstname() {
         return firstname;

@@ -1,4 +1,4 @@
-package pojo_Programs.Post_Request_Examples;
+package pojo_Programs_Master.Post_Request_Examples;
 
 import com.google.gson.Gson;
 import io.qameta.allure.Description;
@@ -9,9 +9,11 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pojo_Programs.pojo_classes.request.Booking;
-import pojo_Programs.pojo_classes.request.BookingDates;
-import pojo_Programs.pojo_classes.response.BookingResponse;
+import pojo_Programs_Master.pojo_classes.request.Booking;
+import pojo_Programs_Master.pojo_classes.request.BookingDates;
+import pojo_Programs_Master.pojo_classes.response.BookingResponse;
+
+import static org.hamcrest.Matchers.equalTo;
 
 public class EX_01_PostPrograms {
 
@@ -19,7 +21,7 @@ public class EX_01_PostPrograms {
     Response response;
     ValidatableResponse validatableResponse;
 
-    @Description("Verify all the posted field values are correct")
+    @Description("Verify all the posted field values get posted correctly")
     @Test
     public void verifyFieldValues(){
 
@@ -59,6 +61,12 @@ public class EX_01_PostPrograms {
         BookingResponse bookingResponse = gson.fromJson(responseJson, BookingResponse.class);
         // String → mapped to Java object (gson.fromJson(responseJson, BookingResponse.class)), gson uses setter method to set values in BookingResponse class
 
+        // After deserialization
+        if (bookingResponse.getBookingid() != null) {
+            System.out.println("bookingid is numeric: " + bookingResponse.getBookingid());
+        } else {
+            System.out.println("bookingid is not set or not numeric.");
+        }
 
         validatableResponse = response.then().log().all();
         validatableResponse.statusCode(200);
@@ -67,6 +75,8 @@ public class EX_01_PostPrograms {
         // 7) Assertions (Response vs Request)
 
         Booking respBooking = bookingResponse.getBooking();
+
+        validatableResponse.body("booking.firstname", equalTo(respBooking.getFirstname()));
 
         Assert.assertEquals(bookingResponse.getBooking().getFirstname(), booking.getFirstname());
         Assert.assertEquals(respBooking.getLastname(), booking.getLastname());
