@@ -58,12 +58,18 @@
 ✅ Key Highlights
 
 🔹 Request building with RequestSpecification
+
 🔹 CRUD Operations (GET, POST, PUT, DELETE) using Rest Assured
+
 🔹 POJO Classes for request & response payloads
+
 🔹 Serialization & Deserialization with Gson
+
 🔹 Different types of Assertions
 - Hamcrest Matchers
 - TestNG Assertions
 - AssertJ Fluent Assertions
+
 🔹 Response data extraction (path, JsonPath, POJO mapping)
+
 🔹 Schema Validation to ensure structure & datatype correctness
