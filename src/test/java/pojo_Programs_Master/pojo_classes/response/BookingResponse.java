@@ -1,14 +1,18 @@
 package pojo_Programs_Master.pojo_classes.response;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import pojo_Programs_Master.pojo_classes.request.Booking;
+
 
 public class BookingResponse {
 
     @SerializedName("bookingid")
+    @Expose
     private Integer bookingid;
+    @SerializedName("booking")
+    @Expose
     private Booking booking;
-
 
     public Integer getBookingid() {
         return bookingid;
@@ -18,7 +22,6 @@ public class BookingResponse {
         this.bookingid = bookingid;
     }
 
-
     public Booking getBooking() {
         return booking;
     }
@@ -26,6 +29,5 @@ public class BookingResponse {
     public void setBooking(Booking booking) {
         this.booking = booking;
     }
-
 
 }

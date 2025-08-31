@@ -62,6 +62,7 @@ public class EX_02_PostPrograms {
         Assert.assertTrue(responseBooking.getFirstname() instanceof String, "Firstname should be String");
         Assert.assertTrue(responseBooking.getLastname() instanceof String, "Firstname should be String");
         Assert.assertNotNull(responseBooking.getTotalprice());
+        Assert.assertNotNull(bookingResponse.getBookingid());
 
     }
 }

@@ -76,6 +76,9 @@ public class EX_01_PostPrograms {
 
         Booking respBooking = bookingResponse.getBooking();
 
+        Integer bookingid = bookingResponse.getBookingid();
+        System.out.println(bookingid);
+
         validatableResponse.body("booking.firstname", equalTo(respBooking.getFirstname()));
 
         Assert.assertEquals(bookingResponse.getBooking().getFirstname(), booking.getFirstname());
